@@ -1,0 +1,12 @@
+C:\Users\chini\source\repos\FastFoodMenu\FastFoodMenu\bin\Debug\FastFoodMenu.exe.config
+C:\Users\chini\source\repos\FastFoodMenu\FastFoodMenu\bin\Debug\FastFoodMenu.exe
+C:\Users\chini\source\repos\FastFoodMenu\FastFoodMenu\bin\Debug\FastFoodMenu.pdb
+C:\Users\chini\source\repos\FastFoodMenu\FastFoodMenu\obj\Debug\FastFoodMenu.Form1.resources
+C:\Users\chini\source\repos\FastFoodMenu\FastFoodMenu\obj\Debug\FastFoodMenu.Properties.Resources.resources
+C:\Users\chini\source\repos\FastFoodMenu\FastFoodMenu\obj\Debug\FastFoodMenu.csproj.GenerateResource.cache
+C:\Users\chini\source\repos\FastFoodMenu\FastFoodMenu\obj\Debug\FastFoodMenu.csproj.CoreCompileInputs.cache
+C:\Users\chini\source\repos\FastFoodMenu\FastFoodMenu\obj\Debug\FastFoodMenu.exe
+C:\Users\chini\source\repos\FastFoodMenu\FastFoodMenu\obj\Debug\FastFoodMenu.pdb
+C:\Users\chini\source\repos\FastFoodMenu\FastFoodMenu\obj\Debug\FastFoodMenu.FirstCustomControl.resources
+C:\Users\chini\source\repos\FastFoodMenu\FastFoodMenu\obj\Debug\FastFoodMenu.SecondCustomControl.resources
+C:\Users\chini\source\repos\FastFoodMenu\FastFoodMenu\obj\Debug\FastFoodMenu.csproj.AssemblyReference.cache
