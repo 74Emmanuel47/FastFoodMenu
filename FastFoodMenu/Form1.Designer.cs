@@ -34,6 +34,7 @@ namespace FastFoodMenu
             this.button2 = new System.Windows.Forms.Button();
             this.indicator = new System.Windows.Forms.Panel();
             this.btnCustmors = new System.Windows.Forms.Button();
+            this.btnDriverPayment = new System.Windows.Forms.Button();
             this.btnTakeAway = new System.Windows.Forms.Button();
             this.btnDelivery = new System.Windows.Forms.Button();
             this.btnCollection = new System.Windows.Forms.Button();
@@ -43,13 +44,12 @@ namespace FastFoodMenu
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnDriverPayment = new System.Windows.Forms.Button();
-            this.secondCustomControl1 = new FastFoodMenu.SecondCustomControl();
             this.firstCustomControl1 = new FastFoodMenu.FirstCustomControl();
+            this.secondCustomControl1 = new FastFoodMenu.SecondCustomControl();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -110,6 +110,23 @@ namespace FastFoodMenu
             this.btnCustmors.Text = "Customers";
             this.btnCustmors.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCustmors.UseVisualStyleBackColor = true;
+            this.btnCustmors.Click += new System.EventHandler(this.btnCustmors_Click);
+            // 
+            // btnDriverPayment
+            // 
+            this.btnDriverPayment.FlatAppearance.BorderSize = 0;
+            this.btnDriverPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDriverPayment.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.btnDriverPayment.ForeColor = System.Drawing.Color.White;
+            this.btnDriverPayment.Location = new System.Drawing.Point(19, 465);
+            this.btnDriverPayment.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDriverPayment.Name = "btnDriverPayment";
+            this.btnDriverPayment.Size = new System.Drawing.Size(226, 57);
+            this.btnDriverPayment.TabIndex = 11;
+            this.btnDriverPayment.Text = "Driver Payment";
+            this.btnDriverPayment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDriverPayment.UseVisualStyleBackColor = true;
+            this.btnDriverPayment.Click += new System.EventHandler(this.btnDriverPayment_Click);
             // 
             // btnTakeAway
             // 
@@ -125,6 +142,7 @@ namespace FastFoodMenu
             this.btnTakeAway.Text = "Take Away";
             this.btnTakeAway.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTakeAway.UseVisualStyleBackColor = true;
+            this.btnTakeAway.Click += new System.EventHandler(this.btnTakeAway_Click);
             // 
             // btnDelivery
             // 
@@ -140,6 +158,7 @@ namespace FastFoodMenu
             this.btnDelivery.Text = "Delivery";
             this.btnDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDelivery.UseVisualStyleBackColor = true;
+            this.btnDelivery.Click += new System.EventHandler(this.btnDelivery_Click);
             // 
             // btnCollection
             // 
@@ -155,6 +174,7 @@ namespace FastFoodMenu
             this.btnCollection.Text = "Collection";
             this.btnCollection.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCollection.UseVisualStyleBackColor = true;
+            this.btnCollection.Click += new System.EventHandler(this.btnCollection_Click);
             // 
             // btnEatIn
             // 
@@ -190,7 +210,7 @@ namespace FastFoodMenu
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkRed;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(248, 0);
             this.panel2.Name = "panel2";
@@ -199,7 +219,8 @@ namespace FastFoodMenu
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.DarkRed;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(346, 16);
@@ -229,16 +250,6 @@ namespace FastFoodMenu
             this.label1.Size = new System.Drawing.Size(112, 23);
             this.label1.TabIndex = 3;
             this.label1.Text = "Fast Foods";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(586, 124);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 34);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
             // 
             // label4
             // 
@@ -284,20 +295,12 @@ namespace FastFoodMenu
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnDriverPayment
+            // firstCustomControl1
             // 
-            this.btnDriverPayment.FlatAppearance.BorderSize = 0;
-            this.btnDriverPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDriverPayment.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.btnDriverPayment.ForeColor = System.Drawing.Color.White;
-            this.btnDriverPayment.Location = new System.Drawing.Point(19, 465);
-            this.btnDriverPayment.Margin = new System.Windows.Forms.Padding(0);
-            this.btnDriverPayment.Name = "btnDriverPayment";
-            this.btnDriverPayment.Size = new System.Drawing.Size(226, 57);
-            this.btnDriverPayment.TabIndex = 11;
-            this.btnDriverPayment.Text = "Driver Payment";
-            this.btnDriverPayment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDriverPayment.UseVisualStyleBackColor = true;
+            this.firstCustomControl1.Location = new System.Drawing.Point(248, 255);
+            this.firstCustomControl1.Name = "firstCustomControl1";
+            this.firstCustomControl1.Size = new System.Drawing.Size(1046, 477);
+            this.firstCustomControl1.TabIndex = 19;
             // 
             // secondCustomControl1
             // 
@@ -307,12 +310,14 @@ namespace FastFoodMenu
             this.secondCustomControl1.Size = new System.Drawing.Size(1046, 477);
             this.secondCustomControl1.TabIndex = 18;
             // 
-            // firstCustomControl1
+            // panel4
             // 
-            this.firstCustomControl1.Location = new System.Drawing.Point(248, 255);
-            this.firstCustomControl1.Name = "firstCustomControl1";
-            this.firstCustomControl1.Size = new System.Drawing.Size(1046, 477);
-            this.firstCustomControl1.TabIndex = 19;
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel4.Location = new System.Drawing.Point(0, 6);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(152, 123);
+            this.panel4.TabIndex = 20;
             // 
             // Form1
             // 
@@ -324,7 +329,6 @@ namespace FastFoodMenu
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -354,7 +358,6 @@ namespace FastFoodMenu
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnClose;
@@ -362,6 +365,7 @@ namespace FastFoodMenu
         private System.Windows.Forms.Button btnDriverPayment;
         private SecondCustomControl secondCustomControl1;
         private FirstCustomControl firstCustomControl1;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 

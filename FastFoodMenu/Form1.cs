@@ -29,7 +29,6 @@ namespace FastFoodMenu
         {
             secondCustomControl1.BringToFront();
             indicator.Location = new Point(indicator.Location.X, btnEatIn.Location.Y);
-            
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -40,6 +39,31 @@ namespace FastFoodMenu
         private void button1_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCollection_Click(object sender, EventArgs e)
+        {
+            indicator.Location = new Point(indicator.Location.X, btnCollection.Location.Y);
+        }
+
+        private void btnDelivery_Click(object sender, EventArgs e)
+        {
+            indicator.Location = new Point(indicator.Location.X, btnDelivery.Location.Y);
+        }
+
+        private void btnTakeAway_Click(object sender, EventArgs e)
+        {
+            indicator.Location = new Point(indicator.Location.X, btnTakeAway.Location.Y);
+        }
+
+        private void btnDriverPayment_Click(object sender, EventArgs e)
+        {
+            indicator.Location = new Point(indicator.Location.X, btnDriverPayment.Location.Y);
+        }
+
+        private void btnCustmors_Click(object sender, EventArgs e)
+        {
+            indicator.Location = new Point(indicator.Location.X, btnCustmors.Location.Y);
         }
     }
 }
